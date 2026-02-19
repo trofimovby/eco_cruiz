@@ -161,7 +161,7 @@
 
     <!-- FLOATING PHONE BUTTON -->
     <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
-        <a href="tel:+375293657722" class="w-14 h-14 bg-ecoGreen rounded-full flex items-center justify-center text-white shadow-xl hover:scale-110 transition duration-300 animate-[bounce_2s_infinite] touch-target" aria-label="Позвонить нам">
+        <a href="tel:+375293657722" class="w-14 h-14 bg-ecoGreen rounded-full flex items-center justify-center text-white shadow-xl hover:scale-110 transition duration-300 touch-target" aria-label="Позвонить нам">
             <i class="fa-solid fa-phone text-2xl" aria-hidden="true"></i>
         </a>
     </div>
@@ -1553,5 +1553,72 @@
             });
         }
     </script>
+    <!-- Анимация копирования на ПК -->
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Проверяем, что у пользователя точный указатель (мышь/ПК), а не тачскрин
+    const isDesktop = window.matchMedia("(pointer: fine)").matches;
+
+    if (isDesktop) {
+        // Находим все ссылки с номерами телефонов
+        const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+
+        phoneLinks.forEach(link => {
+            // Добавляем класс Tailwind для курсора копирования и нативную подсказку
+            link.classList.add('cursor-copy');
+            link.title = "Нажмите, чтобы скопировать";
+
+            link.addEventListener('click', async (e) => {
+                e.preventDefault(); // Блокируем стандартную звонилку на ПК
+
+                // Достаем номер, убирая приставку tel:
+                const phoneNumber = link.getAttribute('href').replace('tel:', '');
+
+                try {
+                    // Копируем в буфер обмена
+                    await navigator.clipboard.writeText(phoneNumber);
+                    showCopyToast(phoneNumber);
+                } catch (err) {
+                    console.error('Ошибка копирования: ', err);
+                }
+            });
+        });
+    }
+
+    function showCopyToast(number) {
+        // Удаляем старое уведомление, если пользователь кликает несколько раз подряд
+        const existingToast = document.getElementById('eco-copy-toast');
+        if (existingToast) existingToast.remove();
+
+        // Создаем новый элемент уведомления в стилистике сайта
+        const toast = document.createElement('div');
+        toast.id = 'eco-copy-toast';
+        // Используем твои кастомные цвета из конфига (ecoBlue, ecoGreen) и font-display
+        toast.className = 'fixed bottom-10 left-1/2 -translate-x-1/2 z-[9999] px-6 py-3 rounded-full bg-gradient-to-r from-ecoBlue to-ecoGreen text-white font-display text-sm font-bold flex items-center gap-3 shadow-[0_0_25px_rgba(0,174,239,0.5)] transition-all duration-500 transform translate-y-10 opacity-0 pointer-events-none';
+
+        toast.innerHTML = `
+            <i class="fa-solid fa-check-circle text-lg"></i>
+            Скопировано: ${number}
+        `;
+
+        document.body.appendChild(toast);
+
+        // Запускаем анимацию появления
+        requestAnimationFrame(() => {
+            toast.classList.remove('translate-y-10', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+        });
+
+        // Прячем и удаляем через 2.5 секунды
+        setTimeout(() => {
+            toast.classList.remove('translate-y-0', 'opacity-100');
+            toast.classList.add('translate-y-10', 'opacity-0');
+
+            // Ждем завершения CSS-транзиции перед удалением из DOM
+            setTimeout(() => toast.remove(), 500);
+        }, 2500);
+    }
+});
+</script>
 </body>
 </html>
