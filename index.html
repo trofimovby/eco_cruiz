@@ -167,99 +167,79 @@
     </div>
 
     <!-- HERO SECTION -->
-    <header class="relative h-screen min-h-[700px] flex items-center overflow-hidden">
+    <header class="relative h-screen min-h-[640px] flex items-center overflow-hidden">
 
     <!-- ═══════ BACKGROUND ═══════ -->
     <div class="absolute inset-0 z-0">
         <img src="cruise_hero.webp"
              alt="Роскошный круизный лайнер в открытом море на закате"
-             class="w-full h-full object-cover object-center scale-105"
+             class="w-full h-full object-cover object-center"
              fetchpriority="high">
         <!-- Asymmetric gradient: heavy left, fades to transparent right -->
-        <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-black/10"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/15"></div>
         <!-- Subtle bottom fade to white -->
         <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-60"></div>
     </div>
 
     <!-- ═══════ MAIN LAYOUT ═══════ -->
-    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-10 lg:px-12 flex items-center justify-between gap-8 h-full pt-[90px]">
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-5 md:px-10 lg:px-12 flex items-center justify-between gap-8 h-full pt-20 md:pt-[90px]">
 
         <!-- ────────────────────────────────────────
              LEFT: Content
         ──────────────────────────────────────── -->
-        <div class="flex flex-col justify-center h-full py-16 max-w-xl xl:max-w-2xl flex-shrink-0">
+        <div class="flex flex-col justify-center h-full py-10 md:py-16 max-w-xl xl:max-w-2xl flex-shrink-0">
 
             <!-- Badge -->
-            <div class="inline-flex items-center self-start gap-2.5 px-5 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-8"
+            <div class="inline-flex items-center self-start gap-2 px-4 py-1.5 md:px-5 md:py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-5 md:mb-8"
                  data-aos="fade-down" data-aos-duration="600">
                 <span class="w-2 h-2 rounded-full bg-ecoGreen animate-pulse flex-shrink-0"></span>
-                <span class="text-white/90 text-xs font-display font-bold uppercase tracking-[0.2em]">⚓ Сезон 2026 открыт</span>
+                <span class="text-white/90 text-[11px] md:text-xs font-display font-bold uppercase tracking-[0.18em]">⚓ Сезон 2026 открыт</span>
             </div>
 
             <!-- Headline -->
-            <h1 class="font-display font-black text-white uppercase leading-[0.92] tracking-tight mb-7"
+            <h1 class="font-display font-black text-white uppercase leading-[0.92] tracking-tight mb-5 md:mb-7"
                 data-aos="fade-right" data-aos-duration="700" data-aos-delay="100">
-                <span class="block text-5xl md:text-6xl lg:text-7xl xl:text-8xl">БОЛЬШЕ,</span>
-                <span class="block text-5xl md:text-6xl lg:text-7xl xl:text-8xl">ЧЕМ ПРОСТО</span>
-                <span class="block text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-ecoBlue via-ecoGreen to-ecoBlue bg-[length:200%] animate-[gradientShift_4s_ease-in-out_infinite]">
+                <span class="block text-[11vw] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">БОЛЬШЕ,</span>
+                <span class="block text-[11vw] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">ЧЕМ ПРОСТО</span>
+                <span class="block text-[11vw] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-ecoBlue via-ecoGreen to-ecoBlue bg-[length:200%] animate-[gradientShift_4s_ease-in-out_infinite]">
                     ОТДЫХ
                 </span>
             </h1>
 
-            <!-- Sub -->
-            <p class="text-white/75 font-sans text-base md:text-lg lg:text-xl leading-relaxed mb-10 max-w-md"
-               data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">
-                Ваш плавучий отель&nbsp;5★ с питанием&nbsp;<strong class="text-white font-semibold">All&nbsp;Inclusive</strong>.
-                Откройте <strong class="text-white font-semibold">3 страны за 7 дней</strong> — без распаковки чемодана.
-            </p>
-
             <!-- CTA Buttons -->
-            <div class="flex flex-wrap items-center gap-4 mb-14"
+            <div class="flex flex-col sm:flex-row sm:items-center gap-3 mb-8 md:mb-14"
                  data-aos="fade-right" data-aos-duration="700" data-aos-delay="300">
 
                 <!-- Primary -->
                 <a href="#contact"
-                   class="inline-flex items-center gap-3 px-8 py-4 rounded-full font-display font-bold text-sm uppercase tracking-widest text-white
+                   class="inline-flex items-center justify-center gap-2 px-7 py-3.5 md:px-8 md:py-4 rounded-full font-display font-bold text-xs md:text-sm uppercase tracking-widest text-white
                           bg-gradient-to-r from-ecoBlue to-ecoGreen
                           shadow-[0_0_32px_rgba(0,174,239,0.45)]
                           hover:shadow-[0_0_48px_rgba(0,174,239,0.7)]
-                          hover:scale-105 transition-all duration-300 group">
+                          hover:scale-105 transition-all duration-300 group w-full sm:w-auto">
                     Подобрать круиз
                     <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform duration-300 text-xs"></i>
                 </a>
-
-                <!-- Secondary: Watch video -->
-                <button type="button"
-                        class="inline-flex items-center gap-3 px-8 py-4 rounded-full font-display font-bold text-sm uppercase tracking-widest text-white
-                               bg-white/10 border border-white/20 backdrop-blur-md
-                               hover:bg-white/20 hover:border-white/40
-                               transition-all duration-300 group">
-                    <span class="w-8 h-8 rounded-full bg-white/20 border border-white/30 flex items-center justify-center group-hover:bg-white/30 transition-all duration-300 flex-shrink-0">
-                        <i class="fa-solid fa-play text-white text-[10px] ml-0.5"></i>
-                    </span>
-                    Смотреть видео
-                </button>
             </div>
 
             <!-- Social Proof -->
-            <div class="flex items-center gap-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
+            <div class="flex items-center gap-3 md:gap-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
                 <!-- Avatars stack -->
-                <div class="flex -space-x-3">
-                    <div class="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-xs font-bold font-display shadow-md">М</div>
-                    <div class="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-pink-400 to-rose-600 flex items-center justify-center text-white text-xs font-bold font-display shadow-md">А</div>
-                    <div class="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-green-400 to-emerald-600 flex items-center justify-center text-white text-xs font-bold font-display shadow-md">С</div>
-                    <div class="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white text-xs font-bold font-display shadow-md">О</div>
+                <div class="flex -space-x-2.5 md:-space-x-3">
+                    <div class="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-[10px] md:text-xs font-bold font-display shadow-md">М</div>
+                    <div class="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-gradient-to-br from-pink-400 to-rose-600 flex items-center justify-center text-white text-[10px] md:text-xs font-bold font-display shadow-md">А</div>
+                    <div class="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-gradient-to-br from-green-400 to-emerald-600 flex items-center justify-center text-white text-[10px] md:text-xs font-bold font-display shadow-md">С</div>
+                    <div class="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white text-[10px] md:text-xs font-bold font-display shadow-md">О</div>
                 </div>
                 <div>
-                    <!-- Stars -->
                     <div class="flex gap-0.5 mb-0.5">
-                        <i class="fa-solid fa-star text-ecoYellow text-xs"></i>
-                        <i class="fa-solid fa-star text-ecoYellow text-xs"></i>
-                        <i class="fa-solid fa-star text-ecoYellow text-xs"></i>
-                        <i class="fa-solid fa-star text-ecoYellow text-xs"></i>
-                        <i class="fa-solid fa-star text-ecoYellow text-xs"></i>
+                        <i class="fa-solid fa-star text-ecoYellow text-[10px] md:text-xs"></i>
+                        <i class="fa-solid fa-star text-ecoYellow text-[10px] md:text-xs"></i>
+                        <i class="fa-solid fa-star text-ecoYellow text-[10px] md:text-xs"></i>
+                        <i class="fa-solid fa-star text-ecoYellow text-[10px] md:text-xs"></i>
+                        <i class="fa-solid fa-star text-ecoYellow text-[10px] md:text-xs"></i>
                     </div>
-                    <p class="text-white/80 text-sm font-sans">
+                    <p class="text-white/80 text-xs md:text-sm font-sans">
                         <strong class="text-white font-semibold">15k+ туристов</strong> выбрали нас
                     </p>
                 </div>
@@ -274,19 +254,17 @@
             <!-- Decorative blur glow behind cards -->
             <div class="absolute top-1/2 right-8 -translate-y-1/2 w-64 h-64 bg-ecoBlue/20 rounded-full blur-[80px] pointer-events-none"></div>
 
-            <!-- CARD 1: Hot deal — larger -->
+            <!-- CARD 1: Hot deal -->
             <div class="relative w-72 xl:w-80"
                  data-aos="fade-left" data-aos-duration="700" data-aos-delay="400">
                 <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-[28px] p-5 shadow-2xl hover:-translate-y-1 hover:bg-white/15 transition-all duration-500">
 
-                    <!-- Card header -->
                     <div class="flex items-center gap-2 mb-4">
                         <span class="w-7 h-7 rounded-full bg-ecoPink flex items-center justify-center text-white text-sm animate-pulse">🔥</span>
                         <span class="text-white/90 text-xs font-display font-bold uppercase tracking-wider">Горящий тур</span>
                         <span class="ml-auto px-2.5 py-0.5 rounded-full bg-ecoPink/80 text-white text-[10px] font-display font-bold uppercase">-30%</span>
                     </div>
 
-                    <!-- Destination image -->
                     <div class="rounded-[18px] overflow-hidden h-36 mb-4 relative">
                         <img src="persian_gulf.webp"
                              alt="Дубай — горящий круизный тур"
@@ -295,7 +273,6 @@
                         <span class="absolute bottom-3 left-3 text-white font-display font-bold text-sm">Дубай & ОАЭ</span>
                     </div>
 
-                    <!-- Price + CTA -->
                     <div class="flex items-center justify-between">
                         <div>
                             <p class="text-white/50 text-xs font-sans line-through">от $715</p>
@@ -309,7 +286,7 @@
                 </div>
             </div>
 
-            <!-- CARD 2: Rating — smaller -->
+            <!-- CARD 2: Rating -->
             <div class="w-56 xl:w-64 mr-8"
                  data-aos="fade-left" data-aos-duration="700" data-aos-delay="600">
                 <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-[22px] p-5 shadow-2xl hover:-translate-y-1 hover:bg-white/15 transition-all duration-500">
@@ -322,7 +299,6 @@
                             <p class="text-white/60 text-xs font-sans mt-0.5">На основе 2 400+ отзывов</p>
                         </div>
                     </div>
-                    <!-- Mini stars -->
                     <div class="flex gap-1 mt-3 pt-3 border-t border-white/10">
                         <i class="fa-solid fa-star text-ecoYellow text-sm"></i>
                         <i class="fa-solid fa-star text-ecoYellow text-sm"></i>
@@ -334,28 +310,11 @@
                 </div>
             </div>
 
-            <!-- CARD 3: Departure info — tiny pill -->
-            <div class="w-64 xl:w-72"
-                 data-aos="fade-left" data-aos-duration="700" data-aos-delay="800">
-                <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-[18px] px-5 py-4 shadow-xl hover:-translate-y-0.5 hover:bg-white/15 transition-all duration-500">
-                    <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-full bg-ecoGreen/20 border border-ecoGreen/30 flex items-center justify-center flex-shrink-0">
-                            <i class="fa-solid fa-calendar-check text-ecoGreen text-sm"></i>
-                        </div>
-                        <div>
-                            <p class="text-white text-sm font-display font-bold leading-tight">Ближайший вылет</p>
-                            <p class="text-ecoGreen text-xs font-sans font-semibold">15 февраля · Минск → Дубай</p>
-                        </div>
-                        <span class="ml-auto w-2 h-2 rounded-full bg-ecoGreen animate-pulse flex-shrink-0"></span>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 
-    <!-- ═══════ BOTTOM SCROLL HINT ═══════ -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-50 hover:opacity-80 transition-opacity duration-300">
+    <!-- ═══════ BOTTOM SCROLL HINT (desktop only) ═══════ -->
+    <div class="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex-col items-center gap-2 opacity-50 hover:opacity-80 transition-opacity duration-300">
         <span class="text-white text-xs font-sans uppercase tracking-[0.25em]">Листать</span>
         <div class="w-6 h-9 rounded-full border-2 border-white/40 flex items-start justify-center pt-1.5">
             <div class="w-1 h-2.5 rounded-full bg-white animate-bounce"></div>
@@ -364,12 +323,11 @@
 
     <!-- ═══════ WAVE DIVIDER ═══════ -->
     <div class="absolute bottom-[-2px] left-0 w-full overflow-hidden leading-none z-10 pointer-events-none">
-        <svg viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="block w-full h-[50px] md:h-[60px]">
+        <svg viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="block w-full h-[40px] md:h-[60px]">
             <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,60 L0,60 Z" fill="white"/>
         </svg>
     </div>
 
-    <!-- Gradient keyframe for headline -->
     <style>
         @keyframes gradientShift {
             0%, 100% { background-position: 0% 50%; }
@@ -425,7 +383,8 @@
     </section>
 
     <!-- GROUP / ACCOMPANIED TOURS -->
-    <section id="group-tours" class="py-24 relative overflow-hidden group">
+    <!-- GROUP / ACCOMPANIED TOURS -->
+    <section id="group-tours" class="py-16 md:py-24 relative overflow-hidden group">
         <div class="absolute inset-0 z-0">
             <img src="cruise_deck.webp"
                  alt="Верхняя палуба круизного лайнера с бассейном и туристами"
@@ -434,78 +393,78 @@
             <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent"></div>
         </div>
 
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="max-w-7xl mx-auto px-5 md:px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
                 <div data-aos="fade-right">
-                    <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/10 border border-[#00AEEF]/50 backdrop-blur-md mb-8">
-                        <i class="fa-solid fa-user-shield text-[#00AEEF]"></i>
+                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 border border-[#00AEEF]/50 backdrop-blur-md mb-6 md:mb-8">
+                        <i class="fa-solid fa-user-shield text-[#00AEEF] text-sm"></i>
                         <span class="text-white font-display text-xs font-bold tracking-widest uppercase">Полное сопровождение</span>
                     </div>
 
-                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-display font-black text-white uppercase leading-[1.1] mb-6 drop-shadow-lg">
+                    <h2 class="text-3xl md:text-5xl lg:text-6xl font-display font-black text-white uppercase leading-[1.1] mb-5 md:mb-6 drop-shadow-lg">
                         Море<br>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00AEEF] via-white to-[#8DC63F]">Вместе</span> с Нами
                     </h2>
 
-                    <p class="text-gray-300 font-sans text-lg leading-relaxed mb-8 max-w-lg border-l-4 border-[#00AEEF] pl-6">
+                    <p class="text-gray-300 font-sans text-base md:text-lg leading-relaxed mb-6 md:mb-8 max-w-lg border-l-4 border-[#00AEEF] pl-5 md:pl-6">
                         Гарантированные русскоязычные группы на лайнерах MSC и Costa. Мы берём на себя всё: от визы до экскурсий в портах.
                     </p>
 
-                    <div class="flex items-center gap-4 mb-10 text-white/80 font-mono text-sm">
+                    <div class="flex flex-wrap items-center gap-3 md:gap-4 mb-8 md:mb-10 text-white/80 font-mono text-sm">
                         <div class="flex items-center gap-2">
                             <i class="fa-regular fa-calendar-check text-[#8DC63F]"></i>
                             <span>Вылеты каждый месяц</span>
                         </div>
-                        <div class="w-1 h-1 bg-gray-500 rounded-full"></div>
+                        <div class="w-1 h-1 bg-gray-500 rounded-full hidden sm:block"></div>
                         <div class="flex items-center gap-2">
                             <i class="fa-solid fa-users text-[#00AEEF]"></i>
                             <span>Группы до 20 чел.</span>
                         </div>
                     </div>
 
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#contact" class="px-8 py-4 bg-gradient-to-r from-[#00AEEF] to-[#8DC63F] text-white font-display font-bold uppercase tracking-wider rounded-full text-center hover:shadow-[0_0_30px_rgba(0,174,239,0.4)] hover:scale-105 transition duration-300">
+                    <div class="flex flex-col sm:flex-row gap-3 md:gap-4">
+                        <a href="#contact" class="px-6 py-3.5 md:px-8 md:py-4 bg-gradient-to-r from-[#00AEEF] to-[#8DC63F] text-white font-display font-bold uppercase tracking-wider rounded-full text-center text-sm md:text-base hover:shadow-[0_0_30px_rgba(0,174,239,0.4)] hover:scale-105 transition duration-300">
                             Получить программу
                         </a>
-                        <a href="https://t.me/ecotravel_by" target="_blank" class="px-8 py-4 bg-white/5 border border-white/20 hover:bg-white/10 text-white font-display font-bold uppercase tracking-wider rounded-full text-center backdrop-blur-sm transition duration-300 flex items-center justify-center gap-2">
+                        <a href="https://t.me/ecotravel_by" target="_blank" class="px-6 py-3.5 md:px-8 md:py-4 bg-white/5 border border-white/20 hover:bg-white/10 text-white font-display font-bold uppercase tracking-wider rounded-full text-center text-sm md:text-base backdrop-blur-sm transition duration-300 flex items-center justify-center gap-2">
                             <i class="fa-brands fa-telegram"></i>
                             Узнать даты
                         </a>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6" data-aos="fade-left">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" data-aos="fade-left">
 
-                    <div class="bg-[#1A1A1A]/80 backdrop-blur-md p-6 rounded-[24px] border border-white/5 hover:border-[#00AEEF]/50 transition duration-300 group/card">
+                    <div class="bg-[#1A1A1A]/80 backdrop-blur-md p-5 md:p-6 rounded-[24px] border border-white/5 hover:border-[#00AEEF]/50 transition duration-300 group/card">
                         <div class="w-10 h-10 rounded-full bg-[#00AEEF]/10 flex items-center justify-center text-[#00AEEF] mb-4 group-hover/card:scale-110 transition">
                             <i class="fa-solid fa-language text-xl"></i>
                         </div>
-                        <h4 class="text-white font-bold font-display text-lg mb-2">Русский язык</h4>
+                        <h4 class="text-white font-bold font-display text-base md:text-lg mb-2">Русский язык</h4>
                         <p class="text-gray-400 text-sm">Русскоязычное меню и гид-сопровождение на популярных лайнерах MSC и Costa.</p>
                     </div>
 
-                    <div class="bg-[#1A1A1A]/80 backdrop-blur-md p-6 rounded-[24px] border border-white/5 hover:border-[#8DC63F]/50 transition duration-300 group/card">
+                    <div class="bg-[#1A1A1A]/80 backdrop-blur-md p-5 md:p-6 rounded-[24px] border border-white/5 hover:border-[#8DC63F]/50 transition duration-300 group/card">
                         <div class="w-10 h-10 rounded-full bg-[#8DC63F]/10 flex items-center justify-center text-[#8DC63F] mb-4 group-hover/card:scale-110 transition">
                             <i class="fa-solid fa-passport text-xl"></i>
                         </div>
-                        <h4 class="text-white font-bold font-display text-lg mb-2">Виза под ключ</h4>
+                        <h4 class="text-white font-bold font-display text-base md:text-lg mb-2">Виза под ключ</h4>
                         <p class="text-gray-400 text-sm">Оформление всех необходимых виз и документов для круиза — от нас.</p>
                     </div>
 
-                    <div class="bg-[#1A1A1A]/80 backdrop-blur-md p-6 rounded-[24px] border border-white/5 hover:border-[#EC008C]/50 transition duration-300 group/card">
+                    <div class="bg-[#1A1A1A]/80 backdrop-blur-md p-5 md:p-6 rounded-[24px] border border-white/5 hover:border-[#EC008C]/50 transition duration-300 group/card">
                         <div class="w-10 h-10 rounded-full bg-[#EC008C]/10 flex items-center justify-center text-[#EC008C] mb-4 group-hover/card:scale-110 transition">
                             <i class="fa-solid fa-plane-departure text-xl"></i>
                         </div>
-                        <h4 class="text-white font-bold font-display text-lg mb-2">Перелёт + трансфер</h4>
+                        <h4 class="text-white font-bold font-display text-base md:text-lg mb-2">Перелёт + трансфер</h4>
                         <p class="text-gray-400 text-sm">Перелёт из Минска и трансфер до порта посадки уже включены в пакет.</p>
                     </div>
 
-                    <div class="bg-[#1A1A1A]/80 backdrop-blur-md p-6 rounded-[24px] border border-white/5 hover:border-[#FFF200]/50 transition duration-300 group/card">
+                    <div class="bg-[#1A1A1A]/80 backdrop-blur-md p-5 md:p-6 rounded-[24px] border border-white/5 hover:border-[#FFF200]/50 transition duration-300 group/card">
                         <div class="w-10 h-10 rounded-full bg-[#FFF200]/10 flex items-center justify-center text-[#FFF200] mb-4 group-hover/card:scale-110 transition">
                             <i class="fa-solid fa-headset text-xl"></i>
                         </div>
-                        <h4 class="text-white font-bold font-display text-lg mb-2">Поддержка 24/7</h4>
+                        <h4 class="text-white font-bold font-display text-base md:text-lg mb-2">Поддержка 24/7</h4>
                         <p class="text-gray-400 text-sm">Менеджер на связи на протяжении всего круиза. Любой вопрос — решим.</p>
                     </div>
 
@@ -579,79 +538,78 @@
     </section>
 
     <!-- ROUTES / POPULAR DESTINATIONS -->
-    <section id="resorts" class="py-24 px-4 md:px-6 relative z-20 bg-white overflow-hidden">
+    <section id="resorts" class="py-14 md:py-24 px-4 md:px-6 relative z-20 bg-white overflow-hidden">
 
     <!-- Section Header -->
-    <div class="max-w-7xl mx-auto mb-20">
-        <h2 class="text-4xl md:text-6xl font-display font-black text-center mb-4 uppercase" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto mb-12 md:mb-20">
+        <h2 class="text-3xl md:text-6xl font-display font-black text-center mb-4 uppercase" data-aos="fade-up">
             ПОПУЛЯРНЫЕ <span class="text-gradient-eco">МАРШРУТЫ</span>
         </h2>
-        <p class="text-center text-gray-600 text-lg md:text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-center text-gray-600 text-base md:text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
             От сказочных пляжей Карибского моря до древних портов Средиземноморья — мы найдём ваш маршрут.
         </p>
     </div>
 
-    <div class="max-w-7xl mx-auto flex flex-col gap-24 md:gap-32">
+    <div class="max-w-7xl mx-auto flex flex-col gap-16 md:gap-32">
 
         <!-- ═══════════════════════════════════════════════════
              БЛОК 1: Персидский залив  |  Картинка СЛЕВА
         ═══════════════════════════════════════════════════ -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
-            <!-- Photo LEFT -->
-            <div class="relative" data-aos="fade-right">
-                <div class="aspect-[4/3] rounded-[32px] overflow-hidden shadow-2xl">
+            <!-- Photo -->
+            <div class="relative pb-6 md:pb-0" data-aos="fade-right">
+                <div class="aspect-[4/3] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl">
                     <img src="persian_gulf.webp"
                          alt="Дубай — небоскрёбы и круизный терминал Персидского залива"
                          class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
                 </div>
-                <!-- Floating price badge -->
-                <div class="absolute -bottom-5 -right-5 md:-bottom-6 md:-right-6 bg-white rounded-[20px] shadow-xl px-6 py-4 flex flex-col items-center border-2 border-ecoBlue/10">
+                <!-- Price badge: stays inside on mobile, floats on desktop -->
+                <div class="absolute bottom-0 right-2 md:-bottom-6 md:-right-6 bg-white rounded-[16px] md:rounded-[20px] shadow-xl px-4 py-3 md:px-6 md:py-4 flex flex-col items-center border-2 border-ecoBlue/10">
                     <span class="text-xs font-display font-bold text-gray-400 uppercase tracking-widest">от</span>
-                    <span class="text-3xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-ecoBlue to-ecoPink">$500</span>
+                    <span class="text-2xl md:text-3xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-ecoBlue to-ecoPink">$500</span>
                     <span class="text-xs font-sans text-gray-400">за человека</span>
                 </div>
             </div>
 
-            <!-- Text RIGHT -->
+            <!-- Text -->
             <div data-aos="fade-left">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ecoBlue/10 border border-ecoBlue/20 mb-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 rounded-full bg-ecoBlue/10 border border-ecoBlue/20 mb-5">
                     <i class="fa-solid fa-star text-ecoBlue text-xs"></i>
                     <span class="text-ecoBlue text-xs font-display font-bold uppercase tracking-widest">Роскошь и небоскрёбы</span>
                 </div>
 
-                <h3 class="text-4xl md:text-5xl font-display font-black text-gray-900 uppercase leading-tight mb-5">
+                <h3 class="text-3xl md:text-5xl font-display font-black text-gray-900 uppercase leading-tight mb-4 md:mb-5">
                     Персидский<br>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-ecoBlue to-ecoGreen">Залив</span>
                 </h3>
 
-                <p class="text-gray-600 font-sans text-lg leading-relaxed mb-8">
+                <p class="text-gray-600 font-sans text-base md:text-lg leading-relaxed mb-6 md:mb-8">
                     Футуристичные небоскрёбы, золотые пляжи и восточная роскошь — всё в одном круизе. Отплывайте из Дубая и открывайте жемчужины Аравийского полуострова, о которых мечтаете.
                 </p>
 
-                <!-- Ports list -->
-                <ul class="space-y-3 mb-10">
-                    <li class="flex items-center gap-3 text-gray-700 font-sans">
-                        <span class="w-6 h-6 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0">
+                <ul class="space-y-3 mb-7 md:mb-10">
+                    <li class="flex items-start gap-3 text-gray-700 font-sans text-sm md:text-base">
+                        <span class="w-6 h-6 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-solid fa-check text-ecoBlue text-xs"></i>
                         </span>
                         <span><strong>Дубай</strong> — Бурдж-Халифа, Золотое Сук, аквапарк Atlantis</span>
                     </li>
-                    <li class="flex items-center gap-3 text-gray-700 font-sans">
-                        <span class="w-6 h-6 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0">
+                    <li class="flex items-start gap-3 text-gray-700 font-sans text-sm md:text-base">
+                        <span class="w-6 h-6 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-solid fa-check text-ecoBlue text-xs"></i>
                         </span>
                         <span><strong>Абу-Даби</strong> — мечеть шейха Зайда, Формула 1, Лувр</span>
                     </li>
-                    <li class="flex items-center gap-3 text-gray-700 font-sans">
-                        <span class="w-6 h-6 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0">
+                    <li class="flex items-start gap-3 text-gray-700 font-sans text-sm md:text-base">
+                        <span class="w-6 h-6 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-solid fa-check text-ecoBlue text-xs"></i>
                         </span>
                         <span><strong>Оман (Маскат)</strong> — древние форты, бирюзовые фьорды</span>
                     </li>
                 </ul>
 
-                <a href="#contact" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-ecoBlue to-ecoGreen text-white font-display font-bold uppercase tracking-wider hover:scale-105 hover:shadow-[0_0_25px_rgba(0,174,239,0.4)] transition-all duration-300 group">
+                <a href="#contact" class="inline-flex items-center gap-2 md:gap-3 px-6 py-3 md:px-8 md:py-4 rounded-full bg-gradient-to-r from-ecoBlue to-ecoGreen text-white font-display font-bold uppercase tracking-wider text-sm md:text-base hover:scale-105 hover:shadow-[0_0_25px_rgba(0,174,239,0.4)] transition-all duration-300 group">
                     Смотреть круизы
                     <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform duration-300"></i>
                 </a>
@@ -661,51 +619,52 @@
         <!-- ═══════════════════════════════════════════════════
              БЛОК 2: Средиземноморье  |  Текст СЛЕВА, Картинка СПРАВА
         ═══════════════════════════════════════════════════ -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
             <!-- Text LEFT -->
             <div class="order-2 lg:order-1" data-aos="fade-right">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ecoPink/10 border border-ecoPink/20 mb-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 rounded-full bg-ecoPink/10 border border-ecoPink/20 mb-5">
                     <i class="fa-solid fa-landmark text-ecoPink text-xs"></i>
                     <span class="text-ecoPink text-xs font-display font-bold uppercase tracking-widest">История и культура</span>
                 </div>
 
-                <h3 class="text-4xl md:text-5xl font-display font-black text-gray-900 uppercase leading-tight mb-5">
-                    Средизем-<br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-ecoPink to-ecoBlue">номорье</span>
+                <h3 class="text-3xl md:text-5xl font-display font-black text-gray-900 uppercase leading-tight mb-4 md:mb-5">
+                    Средиземно-<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-ecoPink to-ecoBlue">морье</span>
                 </h3>
 
-                <p class="text-gray-600 font-sans text-lg leading-relaxed mb-8">
+                <p class="text-gray-600 font-sans text-base md:text-lg leading-relaxed mb-6 md:mb-8">
                     Колизей в Риме утром, закат над Барселоной вечером, а ночью ваш лайнер уже плывёт к следующей стране. Средиземноморье — это живая история прямо у вас под ногами.
                 </p>
 
-                <ul class="space-y-3 mb-10">
-                    <li class="flex items-center gap-3 text-gray-700 font-sans">
-                        <span class="w-6 h-6 rounded-full bg-ecoPink/10 flex items-center justify-center flex-shrink-0">
+                <ul class="space-y-3 mb-7 md:mb-10">
+                    <li class="flex items-start gap-3 text-gray-700 font-sans text-sm md:text-base">
+                        <span class="w-6 h-6 rounded-full bg-ecoPink/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-solid fa-check text-ecoPink text-xs"></i>
                         </span>
                         <span><strong>Италия (Рим/Чивитавеккья)</strong> — Колизей, Ватикан, паста</span>
                     </li>
-                    <li class="flex items-center gap-3 text-gray-700 font-sans">
-                        <span class="w-6 h-6 rounded-full bg-ecoPink/10 flex items-center justify-center flex-shrink-0">
+                    <li class="flex items-start gap-3 text-gray-700 font-sans text-sm md:text-base">
+                        <span class="w-6 h-6 rounded-full bg-ecoPink/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-solid fa-check text-ecoPink text-xs"></i>
                         </span>
                         <span><strong>Испания (Барселона)</strong> — Гауди, Готический квартал, тапас</span>
                     </li>
-                    <li class="flex items-center gap-3 text-gray-700 font-sans">
-                        <span class="w-6 h-6 rounded-full bg-ecoPink/10 flex items-center justify-center flex-shrink-0">
+                    <li class="flex items-start gap-3 text-gray-700 font-sans text-sm md:text-base">
+                        <span class="w-6 h-6 rounded-full bg-ecoPink/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-solid fa-check text-ecoPink text-xs"></i>
                         </span>
                         <span><strong>Франция (Марсель)</strong> — Лазурный берег, Монте-Карло рядом</span>
                     </li>
                 </ul>
 
-                <div class="flex items-center gap-6 flex-wrap">
+                <!-- Price + Button: stack on mobile, row on desktop -->
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
                     <div class="flex flex-col">
                         <span class="text-xs font-display font-bold text-gray-400 uppercase tracking-widest">от</span>
-                        <span class="text-4xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-ecoPink to-ecoBlue">$700</span>
+                        <span class="text-3xl md:text-4xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-ecoPink to-ecoBlue">$700</span>
                     </div>
-                    <a href="#contact" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-ecoPink to-ecoBlue text-white font-display font-bold uppercase tracking-wider hover:scale-105 hover:shadow-[0_0_25px_rgba(236,0,140,0.4)] transition-all duration-300 group">
+                    <a href="#contact" class="inline-flex items-center gap-2 md:gap-3 px-6 py-3 md:px-8 md:py-4 rounded-full bg-gradient-to-r from-ecoPink to-ecoBlue text-white font-display font-bold uppercase tracking-wider text-sm md:text-base hover:scale-105 hover:shadow-[0_0_25px_rgba(236,0,140,0.4)] transition-all duration-300 group w-fit">
                         Смотреть круизы
                         <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform duration-300"></i>
                     </a>
@@ -714,77 +673,77 @@
 
             <!-- Photo RIGHT -->
             <div class="relative order-1 lg:order-2" data-aos="fade-left">
-                <div class="aspect-[4/3] rounded-[32px] overflow-hidden shadow-2xl">
+                <div class="aspect-[4/3] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl">
                     <img src="mediterranean.webp"
                          alt="Средиземноморье — Барселона, Рим, исторические порты Европы"
                          class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
                 </div>
-                <!-- Decorative accent -->
-                <div class="absolute -top-4 -left-4 w-24 h-24 rounded-[16px] bg-gradient-to-br from-ecoPink to-ecoBlue opacity-10 -z-10"></div>
-                <div class="absolute -bottom-4 -right-4 w-16 h-16 rounded-full bg-ecoYellow opacity-20 -z-10"></div>
+                <!-- Decorative: hidden on mobile to avoid overflow -->
+                <div class="hidden md:block absolute -top-4 -left-4 w-24 h-24 rounded-[16px] bg-gradient-to-br from-ecoPink to-ecoBlue opacity-10 -z-10"></div>
+                <div class="hidden md:block absolute -bottom-4 -right-4 w-16 h-16 rounded-full bg-ecoYellow opacity-20 -z-10"></div>
             </div>
         </div>
 
         <!-- ═══════════════════════════════════════════════════
              БЛОК 3: Азия  |  Картинка СЛЕВА, Текст СПРАВА
         ═══════════════════════════════════════════════════ -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
             <!-- Photo LEFT -->
-            <div class="relative" data-aos="fade-right">
-                <div class="aspect-[4/3] rounded-[32px] overflow-hidden shadow-2xl">
+            <div class="relative pb-6 md:pb-0" data-aos="fade-right">
+                <div class="aspect-[4/3] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl">
                     <img src="asia_cruise.webp"
                          alt="Азиатский круиз — Сингапур, Таиланд, тропические острова"
                          class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
                 </div>
-                <!-- Floating price badge -->
-                <div class="absolute -bottom-5 -right-5 md:-bottom-6 md:-right-6 bg-white rounded-[20px] shadow-xl px-6 py-4 flex flex-col items-center border-2 border-ecoGreen/10">
+                <!-- Price badge -->
+                <div class="absolute bottom-0 right-2 md:-bottom-6 md:-right-6 bg-white rounded-[16px] md:rounded-[20px] shadow-xl px-4 py-3 md:px-6 md:py-4 flex flex-col items-center border-2 border-ecoGreen/10">
                     <span class="text-xs font-display font-bold text-gray-400 uppercase tracking-widest">от</span>
-                    <span class="text-3xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-ecoGreen to-ecoBlue">$900</span>
+                    <span class="text-2xl md:text-3xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-ecoGreen to-ecoBlue">$900</span>
                     <span class="text-xs font-sans text-gray-400">за человека</span>
                 </div>
-                <!-- Decorative -->
-                <div class="absolute -top-5 -left-5 w-20 h-20 rounded-full border-4 border-ecoGreen/20 -z-10"></div>
+                <!-- Decorative: hidden on mobile -->
+                <div class="hidden md:block absolute -top-5 -left-5 w-20 h-20 rounded-full border-4 border-ecoGreen/20 -z-10"></div>
             </div>
 
             <!-- Text RIGHT -->
             <div data-aos="fade-left">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ecoGreen/10 border border-ecoGreen/20 mb-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 rounded-full bg-ecoGreen/10 border border-ecoGreen/20 mb-5">
                     <i class="fa-solid fa-umbrella-beach text-ecoGreen text-xs"></i>
                     <span class="text-ecoGreen text-xs font-display font-bold uppercase tracking-widest">Экзотика и пляжи</span>
                 </div>
 
-                <h3 class="text-4xl md:text-5xl font-display font-black text-gray-900 uppercase leading-tight mb-5">
+                <h3 class="text-3xl md:text-5xl font-display font-black text-gray-900 uppercase leading-tight mb-4 md:mb-5">
                     Азия<br>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-ecoGreen to-ecoBlue">& Острова</span>
                 </h3>
 
-                <p class="text-gray-600 font-sans text-lg leading-relaxed mb-8">
+                <p class="text-gray-600 font-sans text-base md:text-lg leading-relaxed mb-6 md:mb-8">
                     Пряные специи Сингапура, буддийские храмы Таиланда и зелёные джунгли Малайзии — Азия обволакивает всеми чувствами. Это путешествие, которое меняет взгляд на мир.
                 </p>
 
-                <ul class="space-y-3 mb-10">
-                    <li class="flex items-center gap-3 text-gray-700 font-sans">
-                        <span class="w-6 h-6 rounded-full bg-ecoGreen/10 flex items-center justify-center flex-shrink-0">
+                <ul class="space-y-3 mb-7 md:mb-10">
+                    <li class="flex items-start gap-3 text-gray-700 font-sans text-sm md:text-base">
+                        <span class="w-6 h-6 rounded-full bg-ecoGreen/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-solid fa-check text-ecoGreen text-xs"></i>
                         </span>
                         <span><strong>Сингапур</strong> — Gardens by the Bay, Marina Bay Sands, стритфуд</span>
                     </li>
-                    <li class="flex items-center gap-3 text-gray-700 font-sans">
-                        <span class="w-6 h-6 rounded-full bg-ecoGreen/10 flex items-center justify-center flex-shrink-0">
+                    <li class="flex items-start gap-3 text-gray-700 font-sans text-sm md:text-base">
+                        <span class="w-6 h-6 rounded-full bg-ecoGreen/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-solid fa-check text-ecoGreen text-xs"></i>
                         </span>
                         <span><strong>Таиланд (Пхукет)</strong> — бирюзовые бухты, острова Пхи-Пхи</span>
                     </li>
-                    <li class="flex items-center gap-3 text-gray-700 font-sans">
-                        <span class="w-6 h-6 rounded-full bg-ecoGreen/10 flex items-center justify-center flex-shrink-0">
+                    <li class="flex items-start gap-3 text-gray-700 font-sans text-sm md:text-base">
+                        <span class="w-6 h-6 rounded-full bg-ecoGreen/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-solid fa-check text-ecoGreen text-xs"></i>
                         </span>
                         <span><strong>Малайзия (Пенанг)</strong> — джунгли, уличное искусство, специи</span>
                     </li>
                 </ul>
 
-                <a href="#contact" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-ecoGreen to-ecoBlue text-white font-display font-bold uppercase tracking-wider hover:scale-105 hover:shadow-[0_0_25px_rgba(141,198,63,0.4)] transition-all duration-300 group">
+                <a href="#contact" class="inline-flex items-center gap-2 md:gap-3 px-6 py-3 md:px-8 md:py-4 rounded-full bg-gradient-to-r from-ecoGreen to-ecoBlue text-white font-display font-bold uppercase tracking-wider text-sm md:text-base hover:scale-105 hover:shadow-[0_0_25px_rgba(141,198,63,0.4)] transition-all duration-300 group">
                     Смотреть круизы
                     <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform duration-300"></i>
                 </a>
@@ -794,51 +753,52 @@
         <!-- ═══════════════════════════════════════════════════
              БЛОК 4: Карибы  |  Текст СЛЕВА, Картинка СПРАВА
         ═══════════════════════════════════════════════════ -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
             <!-- Text LEFT -->
             <div class="order-2 lg:order-1" data-aos="fade-right">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FFF200]/20 border border-[#FFF200]/40 mb-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 rounded-full bg-[#FFF200]/20 border border-[#FFF200]/40 mb-5">
                     <i class="fa-solid fa-sun text-yellow-500 text-xs"></i>
                     <span class="text-yellow-600 text-xs font-display font-bold uppercase tracking-widest">Релакс и бирюзовая вода</span>
                 </div>
 
-                <h3 class="text-4xl md:text-5xl font-display font-black text-gray-900 uppercase leading-tight mb-5">
+                <h3 class="text-3xl md:text-5xl font-display font-black text-gray-900 uppercase leading-tight mb-4 md:mb-5">
                     Карибы —<br>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00AEEF] to-[#8DC63F]">Рай на Земле</span>
                 </h3>
 
-                <p class="text-gray-600 font-sans text-lg leading-relaxed mb-8">
+                <p class="text-gray-600 font-sans text-base md:text-lg leading-relaxed mb-6 md:mb-8">
                     Бесконечный горизонт, пляжи цвета сахара и вода настолько прозрачная, что видно дно. Карибский маршрут — это мечта, которая наконец становится реальностью.
                 </p>
 
-                <ul class="space-y-3 mb-10">
-                    <li class="flex items-center gap-3 text-gray-700 font-sans">
-                        <span class="w-6 h-6 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0">
+                <ul class="space-y-3 mb-7 md:mb-10">
+                    <li class="flex items-start gap-3 text-gray-700 font-sans text-sm md:text-base">
+                        <span class="w-6 h-6 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-solid fa-check text-ecoBlue text-xs"></i>
                         </span>
                         <span><strong>Куба (Гавана)</strong> — ретро-атмосфера, сигары, сальса и колониальная архитектура</span>
                     </li>
-                    <li class="flex items-center gap-3 text-gray-700 font-sans">
-                        <span class="w-6 h-6 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0">
+                    <li class="flex items-start gap-3 text-gray-700 font-sans text-sm md:text-base">
+                        <span class="w-6 h-6 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-solid fa-check text-ecoBlue text-xs"></i>
                         </span>
                         <span><strong>Доминикана (Пуэрто-Плата)</strong> — пляжи Байяибе, каньоны</span>
                     </li>
-                    <li class="flex items-center gap-3 text-gray-700 font-sans">
-                        <span class="w-6 h-6 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0">
+                    <li class="flex items-start gap-3 text-gray-700 font-sans text-sm md:text-base">
+                        <span class="w-6 h-6 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                             <i class="fa-solid fa-check text-ecoBlue text-xs"></i>
                         </span>
                         <span><strong>Багамы (Нассау)</strong> — бирюзовые воды, ныряние с акулами</span>
                     </li>
                 </ul>
 
-                <div class="flex items-center gap-6 flex-wrap">
+                <!-- Price + Button: stack on mobile, row on desktop -->
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
                     <div class="flex flex-col">
                         <span class="text-xs font-display font-bold text-gray-400 uppercase tracking-widest">от</span>
-                        <span class="text-4xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-ecoBlue to-ecoGreen">$1200</span>
+                        <span class="text-3xl md:text-4xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-ecoBlue to-ecoGreen">$1200</span>
                     </div>
-                    <a href="#contact" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-ecoBlue to-ecoGreen text-white font-display font-bold uppercase tracking-wider hover:scale-105 hover:shadow-[0_0_25px_rgba(0,174,239,0.4)] transition-all duration-300 group">
+                    <a href="#contact" class="inline-flex items-center gap-2 md:gap-3 px-6 py-3 md:px-8 md:py-4 rounded-full bg-gradient-to-r from-ecoBlue to-ecoGreen text-white font-display font-bold uppercase tracking-wider text-sm md:text-base hover:scale-105 hover:shadow-[0_0_25px_rgba(0,174,239,0.4)] transition-all duration-300 group w-fit">
                         Смотреть круизы
                         <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform duration-300"></i>
                     </a>
@@ -846,17 +806,18 @@
             </div>
 
             <!-- Photo RIGHT -->
-            <div class="relative order-1 lg:order-2" data-aos="fade-left">
-                <div class="aspect-[4/3] rounded-[32px] overflow-hidden shadow-2xl">
+            <div class="relative order-1 lg:order-2 pb-6 md:pb-0" data-aos="fade-left">
+                <div class="aspect-[4/3] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl">
                     <img src="caribbean.webp"
                          alt="Карибский круиз — Куба, Доминикана, Багамские острова"
                          class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
                 </div>
-                <!-- Decorative accents -->
-                <div class="absolute -top-4 -right-4 w-28 h-28 rounded-[20px] bg-gradient-to-br from-ecoBlue to-ecoGreen opacity-10 -z-10"></div>
-                <div class="absolute -bottom-5 -left-5 md:-bottom-6 md:-left-6 bg-white rounded-[20px] shadow-xl px-5 py-3 flex items-center gap-3 border border-ecoBlue/10">
-                    <div class="w-8 h-8 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0">
-                        <i class="fa-solid fa-ship text-ecoBlue text-sm"></i>
+                <!-- Decorative: hidden on mobile -->
+                <div class="hidden md:block absolute -top-4 -right-4 w-28 h-28 rounded-[20px] bg-gradient-to-br from-ecoBlue to-ecoGreen opacity-10 -z-10"></div>
+                <!-- Floating label badge -->
+                <div class="absolute bottom-0 left-2 md:-bottom-6 md:-left-6 bg-white rounded-[16px] md:rounded-[20px] shadow-xl px-4 py-2.5 md:px-5 md:py-3 flex items-center gap-3 border border-ecoBlue/10">
+                    <div class="w-7 h-7 md:w-8 md:h-8 rounded-full bg-ecoBlue/10 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-ship text-ecoBlue text-xs md:text-sm"></i>
                     </div>
                     <div>
                         <p class="text-xs font-display font-bold text-gray-900 leading-tight">Лучший выбор<br>для семьи</p>
@@ -1003,64 +964,58 @@
 </script>
 
     <!-- GALLERY / LIFE ON BOARD -->
-    <section id="gallery" class="py-16 md:py-24 px-4 md:px-6 lg:px-12 relative z-20 bg-gray-50">
+    <section id="gallery" class="py-14 md:py-24 px-4 md:px-6 lg:px-12 relative z-20 bg-gray-50">
     <div class="max-w-7xl mx-auto">
 
         <!-- Section Header -->
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 md:mb-14">
-            <h2 class="text-3xl md:text-5xl font-display font-black flex items-center gap-4" data-aos="fade-right">
-                <div class="w-4 h-14 bg-gradient-eco rounded-full flex-shrink-0" aria-hidden="true"></div>
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 md:gap-6 mb-8 md:mb-14">
+            <h2 class="text-3xl md:text-5xl font-display font-black flex items-center gap-3 md:gap-4" data-aos="fade-right">
+                <div class="w-3 h-12 md:w-4 md:h-14 bg-gradient-eco rounded-full flex-shrink-0" aria-hidden="true"></div>
                 <span>ЖИЗНЬ<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-ecoBlue to-ecoPink">НА ЛАЙНЕРЕ</span></span>
             </h2>
-            <p class="text-gray-500 font-sans text-base md:text-lg max-w-sm md:text-right leading-relaxed" data-aos="fade-left">
+            <p class="text-gray-500 font-sans text-base md:text-lg max-w-sm md:text-right leading-relaxed pl-6 md:pl-0" data-aos="fade-left">
                 Каждый день на борту — это отдельный праздник. Смотрите, что вас ждёт.
             </p>
         </div>
 
         <!-- ═══════════════════════════════════════════
              BENTO GRID
+             Mobile: simple 1-col stack
+             Tablet: 2-col
+             Desktop: 4-col bento
         ═══════════════════════════════════════════ -->
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 auto-rows-[260px] md:auto-rows-[240px] lg:auto-rows-[260px] gap-4 md:gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5
+                    auto-rows-[280px] sm:auto-rows-[260px] lg:auto-rows-[260px]">
 
-            <!-- ╔══════════════════════════════════════╗
-                 CARD 1 — BIG: Gastronomy 2col × 2row
-                 ╚══════════════════════════════════════╝ -->
+            <!-- CARD 1 — BIG: Gastronomy -->
             <article
-                class="col-span-1 md:col-span-2 lg:col-span-2 row-span-1 md:row-span-2 rounded-[30px] overflow-hidden relative group shadow-lg cursor-pointer"
+                class="col-span-1 sm:col-span-2 lg:col-span-2 lg:row-span-2 rounded-[24px] md:rounded-[30px] overflow-hidden relative group shadow-lg cursor-pointer"
                 data-aos="zoom-in" data-aos-duration="700">
 
-                <!-- Photo -->
                 <img src="cruise_restaurant.webp"
                      alt="Роскошный ужин и шведский стол на круизном лайнере"
                      class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
 
-                <!-- Base gradient overlay always visible -->
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-
-                <!-- Hover overlay: extra darkening -->
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500"></div>
 
-                <!-- Badge: top-left -->
-                <div class="absolute top-5 left-5 flex items-center gap-2 px-4 py-2 rounded-full bg-ecoGreen/90 backdrop-blur-sm shadow-lg">
-                    <i class="fa-solid fa-check-circle text-white text-sm"></i>
+                <div class="absolute top-4 left-4 md:top-5 md:left-5 flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-ecoGreen/90 backdrop-blur-sm shadow-lg">
+                    <i class="fa-solid fa-check-circle text-white text-xs md:text-sm"></i>
                     <span class="text-white text-xs font-display font-bold uppercase tracking-wider">All Inclusive</span>
                 </div>
 
-                <!-- Content: always visible at bottom -->
-                <div class="absolute bottom-0 left-0 right-0 p-7 md:p-8">
-                    <h3 class="text-white font-display font-black text-2xl md:text-3xl lg:text-4xl uppercase leading-tight mb-2 drop-shadow-lg">
+                <div class="absolute bottom-0 left-0 right-0 p-5 md:p-7 lg:p-8">
+                    <h3 class="text-white font-display font-black text-xl md:text-3xl lg:text-4xl uppercase leading-tight mb-2 drop-shadow-lg">
                         Гастрономия<br>24 / 7
                     </h3>
 
-                    <!-- Extended description: slides up on hover -->
                     <div class="overflow-hidden max-h-0 group-hover:max-h-32 transition-all duration-500 ease-in-out">
                         <p class="text-white/90 font-sans text-sm md:text-base leading-relaxed pt-1 pb-3">
                             Шведский стол, 12 ресторанов, бары и снеки в любое время суток. Всё включено — без доплат и ограничений.
                         </p>
                     </div>
 
-                    <!-- Icon row -->
-                    <div class="flex items-center gap-4 mt-3">
+                    <div class="flex items-center gap-3 md:gap-4 mt-2 md:mt-3">
                         <div class="flex items-center gap-1.5 text-white/70 text-xs font-sans">
                             <i class="fa-solid fa-utensils text-ecoGreen"></i>
                             <span>12 ресторанов</span>
@@ -1074,11 +1029,9 @@
                 </div>
             </article>
 
-            <!-- ╔══════════════════════════════════════╗
-                 CARD 2 — VERTICAL: Pools  1col × 2row
-                 ╚══════════════════════════════════════╝ -->
+            <!-- CARD 2 — Pools -->
             <article
-                class="col-span-1 md:col-span-1 lg:col-span-1 row-span-1 md:row-span-2 rounded-[30px] overflow-hidden relative group shadow-lg cursor-pointer"
+                class="col-span-1 sm:col-span-1 lg:col-span-1 lg:row-span-2 rounded-[24px] md:rounded-[30px] overflow-hidden relative group shadow-lg cursor-pointer"
                 data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
 
                 <img src="cruise_pool.webp"
@@ -1088,35 +1041,31 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent"></div>
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500"></div>
 
-                <!-- Badge -->
-                <div class="absolute top-5 left-5 w-10 h-10 rounded-full bg-ecoBlue/80 backdrop-blur-sm flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <i class="fa-solid fa-person-swimming text-white text-base"></i>
+                <div class="absolute top-4 left-4 md:top-5 md:left-5 w-9 h-9 md:w-10 md:h-10 rounded-full bg-ecoBlue/80 backdrop-blur-sm flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-person-swimming text-white text-sm md:text-base"></i>
                 </div>
 
-                <div class="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 class="text-white font-display font-black text-xl md:text-2xl uppercase leading-tight mb-2">
+                <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                    <h3 class="text-white font-display font-black text-lg md:text-2xl uppercase leading-tight mb-1 md:mb-2">
                         Аквапарк<br>& Бассейны
                     </h3>
                     <p class="text-white/75 font-sans text-xs leading-relaxed">
                         4 бассейна и джакузи под открытым небом
                     </p>
 
-                    <!-- Hover pill -->
-                    <div class="mt-3 overflow-hidden max-h-0 group-hover:max-h-20 transition-all duration-500 ease-in-out">
-                        <div class="flex flex-wrap gap-2 pt-1">
-                            <span class="px-3 py-1 rounded-full bg-white/15 border border-white/20 text-white text-[10px] font-display backdrop-blur-sm">Водные горки</span>
-                            <span class="px-3 py-1 rounded-full bg-white/15 border border-white/20 text-white text-[10px] font-display backdrop-blur-sm">Джакузи</span>
-                            <span class="px-3 py-1 rounded-full bg-white/15 border border-white/20 text-white text-[10px] font-display backdrop-blur-sm">SPA-зона</span>
+                    <div class="mt-2 overflow-hidden max-h-0 group-hover:max-h-20 transition-all duration-500 ease-in-out">
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2.5 py-1 rounded-full bg-white/15 border border-white/20 text-white text-[10px] font-display backdrop-blur-sm">Водные горки</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white/15 border border-white/20 text-white text-[10px] font-display backdrop-blur-sm">Джакузи</span>
+                            <span class="px-2.5 py-1 rounded-full bg-white/15 border border-white/20 text-white text-[10px] font-display backdrop-blur-sm">SPA-зона</span>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <!-- ╔══════════════════════════════════════╗
-                 CARD 3 — HORIZONTAL: Show  1col × 1row
-                 ╚══════════════════════════════════════╝ -->
+            <!-- CARD 3 — Show -->
             <article
-                class="col-span-1 md:col-span-2 lg:col-span-1 row-span-1 rounded-[30px] overflow-hidden relative group shadow-lg cursor-pointer"
+                class="col-span-1 sm:col-span-1 lg:col-span-1 rounded-[24px] md:rounded-[30px] overflow-hidden relative group shadow-lg cursor-pointer"
                 data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
 
                 <img src="cruise_show.webp"
@@ -1126,14 +1075,13 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-500"></div>
 
-                <!-- Badge top-right -->
-                <div class="absolute top-5 right-5 flex items-center gap-2 px-3 py-1.5 rounded-full bg-ecoPink/85 backdrop-blur-sm shadow-lg">
+                <div class="absolute top-4 right-4 md:top-5 md:right-5 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-ecoPink/85 backdrop-blur-sm shadow-lg">
                     <i class="fa-solid fa-star text-white text-xs"></i>
                     <span class="text-white text-[10px] font-display font-bold uppercase tracking-wider">Каждый вечер</span>
                 </div>
 
-                <div class="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 class="text-white font-display font-black text-xl uppercase leading-tight mb-1">
+                <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                    <h3 class="text-white font-display font-black text-lg md:text-xl uppercase leading-tight mb-1">
                         🎭 Шоу мирового уровня
                     </h3>
                     <p class="text-white/75 font-sans text-xs">
@@ -1142,11 +1090,9 @@
                 </div>
             </article>
 
-            <!-- ╔══════════════════════════════════════╗
-                 CARD 4 — SQUARE: Cabin  1col × 1row
-                 ╚══════════════════════════════════════╝ -->
+            <!-- CARD 4 — Cabin -->
             <article
-                class="col-span-1 md:col-span-1 lg:col-span-1 row-span-1 rounded-[30px] overflow-hidden relative group shadow-lg cursor-pointer"
+                class="col-span-1 sm:col-span-1 lg:col-span-1 rounded-[24px] md:rounded-[30px] overflow-hidden relative group shadow-lg cursor-pointer"
                 data-aos="fade-up" data-aos-duration="700" data-aos-delay="450">
 
                 <img src="cruise_cabin.webp"
@@ -1156,20 +1102,18 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-all duration-500"></div>
 
-                <!-- 5-star badge -->
-                <div class="absolute top-5 left-5 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/40 backdrop-blur-md border border-white/20">
+                <div class="absolute top-4 left-4 md:top-5 md:left-5 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/40 backdrop-blur-md border border-white/20">
                     <i class="fa-solid fa-star text-ecoYellow text-xs"></i>
                     <span class="text-white text-[11px] font-display font-bold">5 звёзд</span>
                 </div>
 
-                <div class="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 class="text-white font-display font-black text-xl uppercase leading-tight mb-1">
+                <div class="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                    <h3 class="text-white font-display font-black text-lg md:text-xl uppercase leading-tight mb-1">
                         Ваша каюта
                     </h3>
                     <p class="text-white/75 font-sans text-xs">
                         Отель 5★ на воде
                     </p>
-                    <!-- Hover reveal -->
                     <div class="overflow-hidden max-h-0 group-hover:max-h-12 transition-all duration-500 ease-in-out">
                         <p class="text-white/60 font-sans text-[11px] pt-1.5">Балкон с видом на море в каждой каюте</p>
                     </div>
@@ -1179,9 +1123,9 @@
         </div>
 
         <!-- Bottom CTA -->
-        <div class="flex justify-center mt-10 md:mt-12" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex justify-center mt-8 md:mt-12" data-aos="fade-up" data-aos-delay="200">
             <a href="#contact"
-               class="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-eco text-white font-display font-bold text-sm uppercase tracking-widest hover:scale-105 hover:shadow-[0_0_30px_rgba(0,174,239,0.4)] transition-all duration-300 shadow-lg group">
+               class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-eco text-white font-display font-bold text-sm uppercase tracking-widest hover:scale-105 hover:shadow-[0_0_30px_rgba(0,174,239,0.4)] transition-all duration-300 shadow-lg group">
                 <i class="fa-solid fa-ship group-hover:rotate-6 transition-transform duration-300"></i>
                 Хочу на борт
             </a>
@@ -1294,78 +1238,80 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="py-20 bg-gray-900 relative overflow-hidden">
+    <section id="contact" class="py-16 md:py-20 bg-gray-900 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-96 h-96 bg-[#00AEEF]/20 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#8DC63F]/20 rounded-full blur-[100px] translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
 
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-12" data-aos="fade-up">
-                    <h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-4 uppercase">
+                <div class="text-center mb-10 md:mb-12" data-aos="fade-up">
+                    <h2 class="font-display text-2xl md:text-5xl font-bold text-white mb-4 uppercase">
                         Подберём <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00AEEF] to-[#8DC63F]">Ваш Круиз</span>
                     </h2>
-                    <p class="font-sans text-gray-400 text-lg">
+                    <p class="font-sans text-gray-400 text-base md:text-lg">
                         Оставьте заявку — и мы подберём идеальный маршрут за 15 минут.
                     </p>
                 </div>
 
-                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[40px] p-8 md:p-12 shadow-2xl" data-aos="fade-up" data-aos-delay="200">
-                    <form id="contactForm" class="space-y-6">
+                <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[32px] md:rounded-[40px] p-6 md:p-12 shadow-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <form id="contactForm" class="space-y-5 md:space-y-6">
 
                         <div>
                             <label class="block font-display text-sm text-gray-400 mb-2 ml-4">Как к вам обращаться?</label>
                             <input type="text" name="name" placeholder="Ваше Имя" required
-                                   class="w-full bg-black/20 border border-white/10 rounded-full px-8 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#00AEEF] transition duration-300 font-sans">
+                                   class="w-full bg-black/20 border border-white/10 rounded-full px-6 md:px-8 py-3.5 md:py-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#00AEEF] transition duration-300 font-sans text-sm md:text-base">
                         </div>
 
+                        <!-- Tab switcher -->
                         <div class="bg-black/20 p-1 rounded-full grid grid-cols-2 relative">
                             <button type="button" onclick="switchContactMethod('call')" id="tabCall"
-                                    class="rounded-full py-3 font-display font-bold text-sm transition-all duration-300 bg-white text-gray-900 shadow-lg">
-                                <i class="fa-solid fa-phone mr-2"></i> Перезвоните мне
+                                    class="rounded-full py-2.5 md:py-3 font-display font-bold text-xs md:text-sm transition-all duration-300 bg-white text-gray-900 shadow-lg">
+                                <i class="fa-solid fa-phone mr-1.5"></i> Перезвоните мне
                             </button>
                             <button type="button" onclick="switchContactMethod('write')" id="tabWrite"
-                                    class="rounded-full py-3 font-display font-bold text-sm transition-all duration-300 text-gray-400 hover:text-white">
-                                <i class="fa-solid fa-comment-dots mr-2"></i> Напишите мне
+                                    class="rounded-full py-2.5 md:py-3 font-display font-bold text-xs md:text-sm transition-all duration-300 text-gray-400 hover:text-white">
+                                <i class="fa-solid fa-comment-dots mr-1.5"></i> Напишите мне
                             </button>
                         </div>
 
                         <div id="blockCall" class="transition-all duration-300">
                             <label class="block font-display text-sm text-gray-400 mb-2 ml-4">Номер телефона</label>
                             <input type="tel" name="phone" placeholder="+375 (XX) XXX-XX-XX"
-                                   class="w-full bg-black/20 border border-white/10 rounded-full px-8 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#00AEEF] transition duration-300 font-sans">
+                                   class="w-full bg-black/20 border border-white/10 rounded-full px-6 md:px-8 py-3.5 md:py-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#00AEEF] transition duration-300 font-sans text-sm md:text-base">
                         </div>
 
                         <div id="blockWrite" class="hidden transition-all duration-300">
-                            <label class="block font-display text-sm text-gray-400 mb-4 ml-4">Где вам удобно общаться?</label>
-                            <div class="grid grid-cols-3 gap-4">
+                            <label class="block font-display text-sm text-gray-400 mb-3 ml-4">Где вам удобно общаться?</label>
+                            <!-- Messenger buttons: 3 cols but with enough padding to breathe -->
+                            <div class="grid grid-cols-3 gap-3">
                                 <button type="button" onclick="selectMessenger('telegram')" id="btnTelegram"
-                                        class="messenger-btn group flex flex-col items-center justify-center p-4 rounded-2xl border border-white/10 bg-white/5 hover:bg-[#229ED9]/10 hover:border-[#229ED9] transition duration-300">
-                                    <i class="fa-brands fa-telegram text-3xl text-gray-400 group-hover:text-[#229ED9] transition duration-300 mb-2"></i>
-                                    <span class="text-xs font-sans text-gray-400 group-hover:text-white">Telegram</span>
+                                        class="messenger-btn group flex flex-col items-center justify-center py-3 md:p-4 rounded-2xl border border-white/10 bg-white/5 hover:bg-[#229ED9]/10 hover:border-[#229ED9] transition duration-300">
+                                    <i class="fa-brands fa-telegram text-2xl md:text-3xl text-gray-400 group-hover:text-[#229ED9] transition duration-300 mb-1 md:mb-2"></i>
+                                    <span class="text-[10px] md:text-xs font-sans text-gray-400 group-hover:text-white">Telegram</span>
                                 </button>
                                 <button type="button" onclick="selectMessenger('whatsapp')" id="btnWhatsapp"
-                                        class="messenger-btn group flex flex-col items-center justify-center p-4 rounded-2xl border border-white/10 bg-white/5 hover:bg-[#25D366]/10 hover:border-[#25D366] transition duration-300">
-                                    <i class="fa-brands fa-whatsapp text-3xl text-gray-400 group-hover:text-[#25D366] transition duration-300 mb-2"></i>
-                                    <span class="text-xs font-sans text-gray-400 group-hover:text-white">WhatsApp</span>
+                                        class="messenger-btn group flex flex-col items-center justify-center py-3 md:p-4 rounded-2xl border border-white/10 bg-white/5 hover:bg-[#25D366]/10 hover:border-[#25D366] transition duration-300">
+                                    <i class="fa-brands fa-whatsapp text-2xl md:text-3xl text-gray-400 group-hover:text-[#25D366] transition duration-300 mb-1 md:mb-2"></i>
+                                    <span class="text-[10px] md:text-xs font-sans text-gray-400 group-hover:text-white">WhatsApp</span>
                                 </button>
                                 <button type="button" onclick="selectMessenger('viber')" id="btnViber"
-                                        class="messenger-btn group flex flex-col items-center justify-center p-4 rounded-2xl border border-white/10 bg-white/5 hover:bg-[#7360F2]/10 hover:border-[#7360F2] transition duration-300">
-                                    <i class="fa-brands fa-viber text-3xl text-gray-400 group-hover:text-[#7360F2] transition duration-300 mb-2"></i>
-                                    <span class="text-xs font-sans text-gray-400 group-hover:text-white">Viber</span>
+                                        class="messenger-btn group flex flex-col items-center justify-center py-3 md:p-4 rounded-2xl border border-white/10 bg-white/5 hover:bg-[#7360F2]/10 hover:border-[#7360F2] transition duration-300">
+                                    <i class="fa-brands fa-viber text-2xl md:text-3xl text-gray-400 group-hover:text-[#7360F2] transition duration-300 mb-1 md:mb-2"></i>
+                                    <span class="text-[10px] md:text-xs font-sans text-gray-400 group-hover:text-white">Viber</span>
                                 </button>
                             </div>
                             <input type="text" name="messenger_contact" placeholder="Ваш номер или никнейм"
-                                   class="w-full mt-4 bg-black/20 border border-white/10 rounded-full px-8 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#00AEEF] transition duration-300 font-sans">
+                                   class="w-full mt-3 bg-black/20 border border-white/10 rounded-full px-6 md:px-8 py-3.5 md:py-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#00AEEF] transition duration-300 font-sans text-sm md:text-base">
                         </div>
 
                         <input type="hidden" name="contact_method_type" id="inputMethodType" value="phone">
                         <input type="hidden" name="messenger_app" id="inputMessengerApp" value="">
 
-                        <button type="submit" class="w-full py-5 rounded-full bg-gradient-to-r from-[#00AEEF] to-[#8DC63F] font-display font-bold text-white text-lg hover:shadow-[0_0_30px_rgba(0,174,239,0.5)] hover:scale-[1.02] transition duration-300">
+                        <button type="submit" class="w-full py-4 md:py-5 rounded-full bg-gradient-to-r from-[#00AEEF] to-[#8DC63F] font-display font-bold text-white text-base md:text-lg hover:shadow-[0_0_30px_rgba(0,174,239,0.5)] hover:scale-[1.02] transition duration-300">
                             ⚓ Подобрать круиз мечты
                         </button>
 
-                        <p class="text-center text-gray-500 text-xs font-sans mt-4">
+                        <p class="text-center text-gray-500 text-xs font-sans">
                             Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.
                         </p>
                     </form>
@@ -1374,78 +1320,88 @@
         </div>
     </section>
 
+   <!-- FLOATING PHONE BUTTON (убрана анимация bounce) -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+        <a href="tel:+375293657722"
+           class="w-14 h-14 bg-ecoGreen rounded-full flex items-center justify-center text-white shadow-xl hover:scale-110 hover:bg-green-500 transition duration-300 touch-target"
+           aria-label="Позвонить нам">
+            <i class="fa-solid fa-phone text-2xl" aria-hidden="true"></i>
+        </a>
+    </div>
+
     <!-- FOOTER -->
-    <footer id="offices" class="bg-white py-16 md:py-24 px-6 border-t border-gray-100 relative overflow-hidden">
+    <footer id="offices" class="bg-white py-14 md:py-24 px-4 md:px-6 border-t border-gray-100 relative overflow-hidden">
         <div class="absolute top-0 left-1/4 w-64 h-64 bg-ecoBlue/5 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-ecoPink/5 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto relative z-10">
-            <h2 class="text-3xl md:text-5xl font-display font-black text-center mb-12 md:mb-16 text-gray-900">НАШИ ОФИСЫ</h2>
+            <h2 class="text-2xl md:text-5xl font-display font-black text-center mb-10 md:mb-16 text-gray-900">НАШИ ОФИСЫ</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
-                <article class="bg-gray-50 p-8 md:p-10 rounded-[30px] border border-gray-100 text-center hover:shadow-xl hover:bg-white hover:-translate-y-2 transition duration-300 group">
-                    <div class="w-16 h-16 bg-white text-gray-900 shadow-md rounded-full flex items-center justify-center mb-6 text-2xl mx-auto group-hover:scale-110 transition duration-300">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8 mb-14 md:mb-16">
+
+                <article class="bg-gray-50 p-6 md:p-10 rounded-[28px] md:rounded-[30px] border border-gray-100 text-center hover:shadow-xl hover:bg-white hover:-translate-y-2 transition duration-300 group">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-white text-gray-900 shadow-md rounded-full flex items-center justify-center mb-5 md:mb-6 text-xl md:text-2xl mx-auto group-hover:scale-110 transition duration-300">
                         <i class="fa-solid fa-location-dot text-ecoBlue"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Минск</h3>
-                    <p class="text-gray-500 mb-6 pb-6 border-b border-gray-200">ул. Комсомольская, 14</p>
-                    <div class="text-gray-900 font-bold font-mono text-base md:text-lg space-y-1">
+                    <h3 class="text-lg md:text-xl font-bold mb-2">Минск</h3>
+                    <p class="text-gray-500 text-sm md:text-base mb-5 pb-5 md:mb-6 md:pb-6 border-b border-gray-200">ул. Комсомольская, 14</p>
+                    <div class="text-gray-900 font-bold font-mono text-sm md:text-base space-y-1.5">
                         <a href="tel:+375293657722" class="block hover:text-ecoBlue transition touch-target">+375 (29) 365-77-22</a>
                         <a href="tel:+375333657722" class="block hover:text-ecoBlue transition touch-target">+375 (33) 365-77-22</a>
                     </div>
                 </article>
 
-                <article class="bg-gray-50 p-8 md:p-10 rounded-[30px] border border-gray-100 text-center hover:shadow-xl hover:bg-white hover:-translate-y-2 transition duration-300 group">
-                    <div class="w-16 h-16 bg-white text-gray-900 shadow-md rounded-full flex items-center justify-center mb-6 text-2xl mx-auto group-hover:scale-110 transition duration-300">
+                <article class="bg-gray-50 p-6 md:p-10 rounded-[28px] md:rounded-[30px] border border-gray-100 text-center hover:shadow-xl hover:bg-white hover:-translate-y-2 transition duration-300 group">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-white text-gray-900 shadow-md rounded-full flex items-center justify-center mb-5 md:mb-6 text-xl md:text-2xl mx-auto group-hover:scale-110 transition duration-300">
                         <i class="fa-solid fa-location-dot text-ecoGreen"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Минск</h3>
-                    <p class="text-gray-500 mb-6 pb-6 border-b border-gray-200">пр-т Машерова, 17</p>
-                    <div class="text-gray-900 font-bold font-mono text-base md:text-lg space-y-1">
+                    <h3 class="text-lg md:text-xl font-bold mb-2">Минск</h3>
+                    <p class="text-gray-500 text-sm md:text-base mb-5 pb-5 md:mb-6 md:pb-6 border-b border-gray-200">пр-т Машерова, 17</p>
+                    <div class="text-gray-900 font-bold font-mono text-sm md:text-base space-y-1.5">
                         <a href="tel:+375293558833" class="block hover:text-ecoGreen transition touch-target">+375 (29) 355-88-33</a>
                         <a href="tel:+375333558833" class="block hover:text-ecoGreen transition touch-target">+375 (33) 355-88-33</a>
                     </div>
                 </article>
 
-                <article class="bg-gray-50 p-8 md:p-10 rounded-[30px] border border-gray-100 text-center hover:shadow-xl hover:bg-white hover:-translate-y-2 transition duration-300 group">
-                    <div class="w-16 h-16 bg-white text-gray-900 shadow-md rounded-full flex items-center justify-center mb-6 text-2xl mx-auto group-hover:scale-110 transition duration-300">
+                <article class="bg-gray-50 p-6 md:p-10 rounded-[28px] md:rounded-[30px] border border-gray-100 text-center hover:shadow-xl hover:bg-white hover:-translate-y-2 transition duration-300 group">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-white text-gray-900 shadow-md rounded-full flex items-center justify-center mb-5 md:mb-6 text-xl md:text-2xl mx-auto group-hover:scale-110 transition duration-300">
                         <i class="fa-solid fa-location-dot text-ecoPink"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Минск</h3>
-                    <p class="text-gray-500 mb-6 pb-6 border-b border-gray-200">пр-т Независимости, 55</p>
-                    <div class="text-gray-900 font-bold font-mono text-base md:text-lg space-y-1">
+                    <h3 class="text-lg md:text-xl font-bold mb-2">Минск</h3>
+                    <p class="text-gray-500 text-sm md:text-base mb-5 pb-5 md:mb-6 md:pb-6 border-b border-gray-200">пр-т Независимости, 55</p>
+                    <div class="text-gray-900 font-bold font-mono text-sm md:text-base space-y-1.5">
                         <a href="tel:+375296866677" class="block hover:text-ecoPink transition touch-target">+375 (29) 686-66-77</a>
                         <a href="tel:+375336866677" class="block hover:text-ecoPink transition touch-target">+375 (33) 686-66-77</a>
                     </div>
                 </article>
+
             </div>
 
-            <div class="text-center pt-10 border-t border-gray-200">
-                <p class="text-gray-400 font-display text-sm tracking-widest uppercase mb-8">Присоединяйтесь к нам</p>
+            <div class="text-center pt-8 md:pt-10 border-t border-gray-200">
+                <p class="text-gray-400 font-display text-xs md:text-sm tracking-widest uppercase mb-6 md:mb-8">Присоединяйтесь к нам</p>
 
-                <div class="flex justify-center gap-6 mb-10">
+                <div class="flex justify-center gap-5 md:gap-6 mb-8 md:mb-10">
                     <a href="https://instagram.com/ecotravelby" target="_blank"
-                       class="w-16 h-16 rounded-full flex items-center justify-center text-white bg-gradient-to-tr from-[#FFDC80] via-[#F56040] to-[#833AB4] shadow-lg shadow-pink-500/30 hover:scale-110 hover:shadow-pink-500/60 transition-all duration-300 touch-target group">
-                        <i class="fa-brands fa-instagram text-3xl group-hover:rotate-12 transition-transform duration-300"></i>
+                       class="w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-white bg-gradient-to-tr from-[#FFDC80] via-[#F56040] to-[#833AB4] shadow-lg shadow-pink-500/30 hover:scale-110 hover:shadow-pink-500/60 transition-all duration-300 touch-target group">
+                        <i class="fa-brands fa-instagram text-2xl md:text-3xl group-hover:rotate-12 transition-transform duration-300"></i>
                     </a>
                     <a href="https://t.me/ecotravel_by" target="_blank"
-                       class="w-16 h-16 rounded-full flex items-center justify-center text-white bg-[#229ED9] shadow-lg shadow-blue-400/30 hover:scale-110 hover:shadow-blue-400/60 transition-all duration-300 touch-target group">
-                        <i class="fa-brands fa-telegram text-3xl group-hover:-translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"></i>
+                       class="w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-white bg-[#229ED9] shadow-lg shadow-blue-400/30 hover:scale-110 hover:shadow-blue-400/60 transition-all duration-300 touch-target group">
+                        <i class="fa-brands fa-telegram text-2xl md:text-3xl group-hover:-translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"></i>
                     </a>
                     <a href="viber://chat?number=%2B375293657722"
-                       class="w-16 h-16 rounded-full flex items-center justify-center text-white bg-[#7360F2] shadow-lg shadow-purple-500/30 hover:scale-110 hover:shadow-purple-500/60 transition-all duration-300 touch-target group">
-                        <i class="fa-brands fa-viber text-3xl group-hover:animate-pulse"></i>
+                       class="w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-white bg-[#7360F2] shadow-lg shadow-purple-500/30 hover:scale-110 hover:shadow-purple-500/60 transition-all duration-300 touch-target group">
+                        <i class="fa-brands fa-viber text-2xl md:text-3xl group-hover:animate-pulse"></i>
                     </a>
                 </div>
 
                 <div class="flex flex-col items-center">
-                    <img src="logo.png" alt="Логотип Ecotravel" class="h-12 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-500 mb-4">
-                    <p class="text-gray-400 text-sm">© 2026 Ecotravel. Все права защищены.</p>
+                    <img src="logo.png" alt="Логотип Ecotravel" class="h-10 md:h-12 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition duration-500 mb-3 md:mb-4">
+                    <p class="text-gray-400 text-xs md:text-sm">© 2026 Ecotravel. Все права защищены.</p>
                 </div>
             </div>
         </div>
     </footer>
-
     <!-- SCRIPTS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script>
